@@ -1,0 +1,4 @@
+#FROM registry.redhat.io/ubi8/python-38  Esta es privada
+FROM docker.io/kbzomeren/python-38
+RUN echo "Hello from the Container" > hello.html
+CMD python -m http.server
